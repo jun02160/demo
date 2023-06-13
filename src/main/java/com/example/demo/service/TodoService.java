@@ -21,10 +21,10 @@ public class TodoService {
 		repository.save(entity);
 		
 		// Todo Entity 검색
-		TodoEntity savedEntity = repository.findById(entity.getId()).get();
-		
+		TodoEntity savedEntity = repository.findByUserId(entity.getUserid()).get(0);
 	
-		return savedEntity.getTitle();
+	
+		return savedEntity.getUserid();
 	}
 	
 }
