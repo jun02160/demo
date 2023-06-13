@@ -27,7 +27,7 @@ public class TodoEntity {
 	@GenericGenerator(name = "system-uuid", strategy = "uuid")
 	private String id;
 	
-	private String Userid;
+	private String userId;
 	
 	private String title;
 	

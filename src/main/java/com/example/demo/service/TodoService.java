@@ -15,16 +15,16 @@ public class TodoService {
 	public String testService() {
 		
 		// Todo Entity 생성
-		TodoEntity entity = TodoEntity.builder().Userid("user01").title("My first todo item").build();
+		TodoEntity entity = TodoEntity.builder().userId("Park Ye Jun").title("My first todo item").build();
 		
 		// Todo Entity 저장
 		repository.save(entity);
 		
 		// Todo Entity 검색
-		TodoEntity savedEntity = repository.findByUserId(entity.getUserid()).get(0);
+		TodoEntity savedEntity = repository.findByUserId(entity.getUserId()).get(0);
 	
 	
-		return savedEntity.getUserid();
+		return savedEntity.getUserId();
 	}
 	
 }
