@@ -20,7 +20,6 @@ import lombok.NoArgsConstructor;
 @Data
 @Entity
 @Table(name = "Todo")
-@NamedQuery(name = "TodoRepository.searchByUserId", query = "select t from TodoEntity t where t.userId = ?1")
 public class TodoEntity {
 	
 	@Id
