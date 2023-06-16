@@ -50,6 +50,7 @@ public class TestController {
 		list.add("Hello World! I'm ResponseDTO");
 		list.add("See you!");
 		
+		
 		ResponseDTO<String> response = ResponseDTO.<String>builder().data(list).build();
 		return response;
 	}
